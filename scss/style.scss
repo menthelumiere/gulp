@@ -1,0 +1,103 @@
+*,
+*,::after,
+*,::before{
+    box-sizing: border-box;
+}
+//
+
+body{
+    position:relative;
+    text-align: center; 
+    margin: 10;
+    line-height:20px;
+    width: 100%;
+    background-color: rgb(209, 204, 204);
+    color:rgb(0, 0, 0);
+    padding: 1px; /* Поля вокруг текста */
+    margin: auto;
+    //display: flex;
+}
+.header{
+    float:center;
+
+    width: 100%;
+    
+}
+.header-top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .statistics{
+        color: red;
+    }
+    
+}
+.topMenu{
+    text-decoration-color:pink;
+}
+.value{
+    color:pink;
+}
+.valueB{
+    color:grey;
+}
+.checkText{
+    text-decoration-color:pink ;
+}
+#menu {
+    /* тут твои стили */
+    background-color: pink;
+    transition: left ease 0.2s;
+    left: -350px;
+    }
+    
+    #menu.show {
+    /* тут твои стили */
+    left: 0px;
+    }
+   
+
+
+
+
+
+
+    .footnote
+{
+    border-left: 1px solid grey;
+    height: 159%;
+    position: relative;
+    margin-left: 95px;
+    top: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.client_name{
+    color:rgb(201, 8, 50);
+}
+.uicontainer{
+    max-width: 1700px;
+    margin-left:auto;
+    margin-right:auto ;
+    padding: 0 10px;
+}
+.uifluidcategorysearch{
+    input {
+        width: 250px;
+        height: 42px;
+        //padding-left: 15px;
+        border-radius: 42px;
+        border: 2px solid #324b4e;
+        background: #F9F0DA;
+        outline: none;
+        position: relative;
+        transition: .3s linear;
+      }
+      input:focus {
+        width: 300px;
+      }
+      
+}

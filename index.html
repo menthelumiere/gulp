@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="image_src" type="image/jpeg" href="images/logo.png" />
+<title>W</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+<link rel="stylesheet" href="css/taskManager.css" />
+<link rel="stylesheet" href="css/circleProgress.css" />
+<link rel="stylesheet" href="css/style.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body   >
+
+  
+  <div class="ui top fixed menu" style="width:100%;" id="topMenu">
+    <div class="item">
+      <a class="ui logo icon image" >
+        <img src="/images/logo.png">
+      </a>
+      
+    </div>
+   
+    <a class=" item">
+      <i class="pink ellipsis horizontal icon"> </i>
+    </a>
+    <a class="item">
+      <i class=" pink folder open outline icon"> </i>
+    </a>
+    <a class="item">
+      <i class="pink sliders horizontal icon"></i>
+    </a>
+    <div class="item" style="width:36%;">
+      <div class="ui icon input" style="border-radius: 100px;">
+        <input type="text" placeholder="Search Anything Here...">
+        <i class="search link icon"></i>
+      </div>
+    </div>
+    <a class="item">
+      <i class=" pink upload icon"></i>
+    </a>
+    <a class=" item">
+      <i class="pink envelope outline icon"></i>
+    </a>
+    <div class=" item">
+      <div class="ui right corner label">
+      <a class="ui black empty circular label"></a>
+      </div>
+      <i class="pink globe icon"></i>
+    </div>
+    <a class=" item">
+      <!--<div style="width:101px; position:relative;">
+        <div style="width:40px; float: left;">
+          
+        </div>
+       <div style="width:60px; float: right;"> 
+         <a class="client_name">Kendall Janner</a>
+         <br>
+         <p class="client_post">Chief Authority</p>
+        </div>
+      </div>-->
+      <img style="height:100%; width: 100%; padding:0; margin:0;"class="client_photo" src="images/kendall.png">
+     </a>
+     <a class=" item">
+    
+      <p class="client_name">Kendall Janner<br>Chief Authority</p>
+      
+      
+    </a>
+    <a class="item">
+      <i class="pink ellipsis vertical icon"></i>
+    </a>
+  </div>
+  <div class="ui left icon fixed vertical menu  " id="menu" style="width:10%; top: 99px;">
+     
+    
+    <a class="item" id="home">
+      <i class="home icon"></i>
+    </a>
+    <a class="item">
+      <i class="chart bar outline icon"></i>
+    </a>
+    <a class=" item" >
+      <i class="user outline icon"></i>
+    </a>
+    <a class=" item" >
+      <i class="cogs icon"></i>
+    </a>  
+    <a class=" item" >
+      <i class="info circle icon"></i>
+    </a>
+    <a class=" item" style="position:bottom;">
+      <i class="power off icon"></i>
+    </a>
+    </div>
+  </div>
+</div>
+  
+      <div class="pusher dimmed" style=" width:100%;position:relative; top: 95px; margin-bottom:20px;">
+        <div class="ui segment" style="border-radius:0;">
+        <div class="ui eight column doubling stackable grid container" >
+          <div class="column">
+            <div class="statistic">
+              <div class=" label">
+                <b>Daily Visitors </b>
+              </div>
+              <div class="value">
+                150,0000
+                <p class="valueB">▲ 1020 ▼ 1020</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="statistic">
+              <div class="label">
+                <b>Daily Customers</b> 
+              </div>
+              <div class="value">
+                120,0000
+                <p class="valueB">▲ 1020 ▼ 1020</p>
+              </div>
+              </div>
+          </div>
+          <div class="column">
+            <div class="statistic">
+              <div class="label">
+                <b>Daily Orders </b>
+              </div>
+              <div class="value">
+                900,0000
+                <p class="valueB">▲ 1020 ▼ 1020</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="statistic">
+              <div class="label">
+                <b>Daily Sales </b>
+              </div>
+              <div class="value">
+                850,0000
+                <p class="valueB">▲ 1020 ▼ 1020</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="statistic">
+              <div class="label">
+                <b>Daily Shipments</b> 
+              </div>
+              <div class="value">
+                750,0000
+                <p class="valueB">▲ 1020 ▼ 1020</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="statistic">
+              <div class="label">
+                <b>Daily Revenue</b>
+              </div>
+              <div class="value">
+                $985,0000
+                <p class="valueB">▲ 1020 ▼ 1020</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="statistic">
+              <div class="label">
+                <b>Daily Reviews</b>
+              </div>
+              <div class="value">
+                600,0000
+                <p class="valueB">▲ 1020 ▼ 1020</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <button class="ui pink tertiary button"><b class="value">+ Add Statistics</b></button>
+          </div>
+        </div>
+      </div>
+     </div> 
+     <div style="width:100%; top:100px; position: relative;">
+
+      <div style="width:70%;float:left;">
+        
+        <div style="width:100%;position: relative;">
+        <div style="width:60%; float:left;position:relative;">
+         <div class="ui segment" style="border-radius:0; margin-bottom:5%; margin-left:5%">
+         <!--<div id="chartContainer" style="height: 300px; ">-->
+          <div class="ui header"> <b style="float:left;"> Monthly Revenue  </b>
+            
+            <button class="ui pink button" >Monthly</button>
+            <button class="ui grey button">Weekly</button> 
+            <button class="ui grey button">Daily </button>
+            <button class="ui icon button"><i class="ellipsis vertical icon"></i></button>
+           
+          </div>
+            
+<div id="chartContainer1" style="height: 200px; width: 100%; position: relative;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+           
+          
+        </div>
+         
+      </div>
+        <div style=" width:40%; position:relative; float: right;">
+      <div class="ui segment" style="  border-radius:0; margin-left:20px; width:100%; margin-right:20px">
+        <b id="circleTitle"></b>
+        <div class="progress-circle progressing p-10" style="margin-left: 30% ;">
+          <div class="progress-circle-border">
+            <div class="left-half-circle"></div><div class="right-half-circle"></div>
+          </div>
+          <div class="progress-circle-content">
+            150$
+          </div>
+        </div>
+          <p class="valueB">▲ 1020 ▼ 1020</p>
+          </div>
+       </div>
+      </div>
+      <div style="width:100%;position: relative;">
+        <div style="width:50%;float:left;">
+       <div class="ui raised segment" style="border-radius: 0; margin-left:20px; margin-right:20px">
+          <b style="float:left;">Customers Feed</b>
+          <div class="ui feed">
+            <div class="event">
+              <div class="label" style="width:60px">
+                <img src="/images/sophie.png" style="width:50%">
+                <div class="date" style="width:100%; font-size:7px; color: grey;">
+                  10 Min Ago
+                </div>
+              </div>
+              <div class="content">
+                <div class="extra text">
+                  <b>Sophie Turner</b> Ours is a life of constant reruns. We're always circling back to where we'd we started, then starting all over again. Even if we don't run extra laps that day, we surely will come back for more of the same another day soon.
+                </div>
+                
+              </div>
+            </div>
+            <div class="footnote">
+            <div class="event" >
+              <div class="label">
+              </div>
+              <div class="content">
+                <div class="summary">
+                  
+                </div>
+                <div class="extra text" style="color:black;">
+                  <b >Sophie Turner</b> Ours is a life of constant reruns. We're always circling back to where we'd we started, then starting all over again. Even if we don't run extra laps that day, we surely will come back for more of the same another day soon.
+                </div>
+                
+              </div>
+            </div>
+            <div class="event" >
+              <div class="label">
+              </div>
+              <div class="content">
+                <div class="extra text" style="color:black;">
+                  <b >Sophie Turner</b> Ours is a life of constant reruns. We're always circling back to where we'd we started, then starting all over again. Even if we don't run extra laps that day, we surely will come back for more of the same another day soon.
+                </div>
+                
+              </div>
+            </div>
+          </div>
+            <div class="event">
+              <div class="label" style="width:60px">
+                <img src="/images/sophie.png" style="width:50%">
+                <div class="date" style="width:100%; font-size:7px; color: grey;">
+                  15 Min Ago
+                </div>
+              </div>
+              <div class="content">
+                <div class="extra text">
+                  <b>Sophie Turner</b> Ours is a life of constant reruns. We're always circling back to where we'd we started, then starting all over again. Even if we don't run extra laps that day, we surely will come back for more of the same another day soon.
+                </div>
+               </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+        
+        <div style="width:50%;float:right;">
+          <div style="width:100%;position: relative;">
+            <div class="ui segment" style="border-radius:0; margin-bottom:20px; margin-right:20px">
+              
+           <b style="float:left;"id="tasksTitle"></b>
+          
+            <div class="ui checkbox" style="width:100%;">
+             
+              <input type="checkbox" name="example">
+              
+              <label class="assaignment" style="width:90%; float:left;  ">
+                <span style="width:30%; float:left; color:pink;" >Shipment</span>
+              <span class="text" style="width: 50%; float:left;"> simple dummy text </span>
+              <span class="text" style="width: 20%;">  <i class="clock outline icon"></i>12:45 am</span>
+             </label>
+             </div>
+             <br>
+             <div class="ui checkbox" style="width:100%">
+             
+              <input type="checkbox" name="example">
+              
+              <label class="assaignment" style="width:90%; float:left;">
+                <span style="width:30%; float:left; color:pink;">Shipment</span>
+              <span class="text" style="width: 50%; float:left;"> simple dummy text </span>
+              <span class="text" style="width: 20%;">  <i class="clock outline icon"></i>12:45 am</span>
+             </label>
+             </div>
+           <br>
+           <div class="ui checkbox" style="width:100%">
+             
+            <input type="checkbox" name="example">
+            
+            <label class="assaignment" style="width:90%; float:left;">
+              <span style="width:30%; float:left; color:pink;">Shipment</span>
+            <span class="text" style="width: 50%; float:left;"> simple dummy text </span>
+            <span class="text" style="width: 20%;">  <i class="clock outline icon"></i>12:45 am</span>
+           </label>
+           </div>
+             <br>
+             <div class="ui checkbox" style="width:100%">
+             
+              <input type="checkbox" name="example">
+              
+              <label class="assaignment" style="width:90%; float:left;">
+                <span style="width:30%; float:left; color:pink;" >Shipment</span>
+              <span class="text" style="width: 50%; float:left;"> simple dummy text </span>
+              <span class="text" style="width: 20%;">  <i class="clock outline icon"></i>12:45 am</span>
+             </label>
+            </div>
+             </div>
+
+          </div>
+          <div style="width:100%;position: relative;">
+            <div style="width:50%;float:left;">
+              <div class="ui segment" style="border-radius: 0; margin-right:20px">
+               <b> Progress  </b>
+                <div id="barContainer2" style="height: 100px;" ></div>
+                <b style="color:blue;">$150,0000</b>
+                <p>▲ 1020 ▼ 1020</p>
+              </div>
+              
+            </div>
+            <div style="width:50%;float:right;position:relative;">
+              <div class="ui segment" style="border-radius: 0; margin-right:20px">
+              <b> Shipments  </b> 
+              <div style="width: 100%; position:relative;">
+                <a style="width: 300px; position:relative;" href="https://yandex.ru/maps/?um=constructor%3A831c6d292d279434f7df8ef8d877bfff524c839890585781075129a6fa6ca47f&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A831c6d292d279434f7df8ef8d877bfff524c839890585781075129a6fa6ca47f&amp;width=220&amp;height=195&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
+                <b style="color:pink; float:left;">$15,000</b>
+                <p>▲ 1020 ▼ 1020</p>
+              </div>
+            </div>
+            </div>
+          </div>
+         
+
+        </div>
+      </div>
+    </div>
+    <div style="width:20%; float:right; margin:0; position:relative; top: 73px;">
+    <div class="ui segment" style="border-radius:0; position:relative; width:100%; height: 1050px; ">
+        <div class="ui pink three item inverted pointing icon menu" style="border-radius:0; width:113%; position:relative; margin-top:-14px; margin-left:-18px !important; margin-right: -10px !important;margin-bottom: 30px;padding-right: -18px !important;">
+          <a class="active item"style="width:33%;">
+            <i class="user friends icon"></i>
+          </a>
+          <a class="item" style="width:33%;">
+            <i class="comment outline icon"></i>
+          </a>
+          <a class="item" style="width:33%;">
+            <i class="thumbs up icon"></i>
+          </a>
+          
+        </div>
+        
+        <div class="ui three column grid" style="float:right;position:relative;">
+          
+          <div class="row">
+            <div class="column" style="width:100%;position:relative;">
+              <h3><img src="images/jenny.png"> Jennifer Lawrence <i class="grey comment outline icon"></i></h3>
+              <p class="valueB">Chief Authority</p> 
+            </div>
+          </div>
+         <hr style="width:70% !important ;position:relative;">
+          <div class="row">
+            <div class="column" style="width:100%;position:relative;">
+              <h3><img src="images/jenny.png"> Jennifer Lawrence <i class="grey comment outline icon"></i></h3>
+              <p class="valueB">Chief Authority</p> 
+              
+              <!--<hr style="width:100% !important ;position:relative;">-->
+            </div>
+          </div>
+          <hr style="width:70%!important ;position:relative;">
+          <div class="row">
+            <div class="column" style="width:100%;position:relative;">
+              <h3><img src="images/jenny.png"> Jennifer Lawrence <i class="grey comment outline icon"></i></h3>
+              <p class="valueB">Chief Authority</p> 
+              
+              <!--<hr style="width:100% !important ;position:relative;">-->
+            </div>
+          </div>
+          <hr style="width:70% !important ;position:relative;">
+          <div class="row">
+            <div class="column" style="width:100%;position:relative;">
+              <h3><img src="images/jenny.png"> Jennifer Lawrence <i class="grey comment outline icon"></i></h3>
+              <p class="valueB">Chief Authority</p> 
+              
+              <!--<hr style="width:100% !important ;position:relative;">-->
+            </div>
+          </div>
+          <hr style="width:70%!important ;position:relative;">
+          <div class="row">
+            <div class="column" style="width:100%;position:relative;">
+              <h3><img src="images/jenny.png"> Jennifer Lawrence <i class="grey comment outline icon"></i></h3>
+              <p class="valueB">Chief Authority</p> 
+              
+              <!--<hr style="width:100% !important ;position:relative;">-->
+            </div>
+          </div>
+          <hr style="width:70%!important ;position:relative;">
+          <div class="row">
+            <div class="column" style="width:100%;position:relative;">
+              <h3><img src="images/jenny.png"> Jennifer Lawrence <i class="grey comment outline icon"></i></h3>
+              <p class="valueB">Chief Authority</p> 
+              
+              <!--<hr style="width:100% !important ;position:relative;">-->
+            </div>
+          </div>
+          <hr style="width:70% !important ;position:relative;">
+         <div class="row">
+           <div class="column">
+      
+             <div class="ui transparent icon input">
+               <input type="text" placeholder="Search...">
+               <i class="search link icon"></i>
+             </div>
+           </div>
+         </div>
+         <hr style="width:70% !important ;position:relative;">
+        <div class="row" style="position: relative;">
+          <div class="ui header"><b>Featured Companys</b></div>
+             
+              <div class="ui grid" style="position: relative;">
+              <div class="three wide column">
+             <button class="ui purple button" style="border-radius:15px; margin-left:20px">
+              <i class="vk icon"></i>
+             </button>
+              </div>
+
+              <div class="three wide column">
+             <button class="ui teal button" style="border-radius:15px; margin-left:35px;">
+              <i class="vimeo v icon"></i>
+             </button>
+             </div>
+            <div class="three wide column">
+            <button class="ui brown button" style="border-radius:15px; margin-left:50px;">
+              <i class="magento icon"></i>
+            </button>
+            </div>
+          </div>
+          <div class="ui grid" style="position: relative;">
+            <div class="three wide column">
+            <button class="ui violet button" style="border-radius:15px; margin-left:20px">
+              <i class="houzz icon"></i>
+            </button>
+            </div>
+            <div class="three wide column">
+            <button class="ui blue button" style="border-radius:15px; margin-left:35px">
+              <i class="css3 icon"></i>
+            </button>
+            </div>
+            <div class="three wide column">
+            <button class="ui yellow button" style="border-radius:15px; margin-left:50px">
+              <i class="deviantart icon"></i>
+            </button>
+          </div>
+        </div>
+        </div>
+     </div>
+            
+            
+            
+            
+    </div>
+      
+      </div>
+    </div>
+    
+  
+      
+  
+
+
+
+
+
+<script type="text/javascript" src="js/main.js"></script>
+  <script src="js/main.min.js"> </script>
+  <script src="js/graph.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+  </html>
